@@ -14,7 +14,7 @@ After each step, a screenshot of the execution is captured and  saved to a folde
 >   Account Address:
     0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 
-![alt=“”](Execution_Results/initial-screenshot-after-deploying.png)
+![alt=“”](Execution_Results/initial-info-after-deploying.png)
 
 
 Execution steps:
