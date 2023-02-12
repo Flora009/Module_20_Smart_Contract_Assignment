@@ -12,7 +12,7 @@ To automate the creation of joint savings accounts, you’ll create a Solidity s
 After each step, a screenshot of the execution is captured and  saved to a folder named `Execution_Results`. 
 
 >   Account Address:
-    0x617F2E2fD72FD9D5503197092aC168c91465E7f2
+    0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 
 ![alt=“”](Execution_Results/initial-screenshot-after-deploying.png)
 
@@ -31,25 +31,64 @@ Execution steps:
 2. Test the deposit functionality of your smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
 
     * Transaction 1: Send 1 ether as wei.
-![alt=“”](Execution_Results/deposit-1eth.png)
+
+        Step1: Set the Value to 1 ETH
+    ![alt=“”](Execution_Results/deposit-1eth.png)
+
+        Step2: Execute Deposit Function
+    ![alt=“”](Execution_Results/deposit-1eth-2.png)
+        
+        Step3: Contract Balance Check
+
+    ![alt=“”](Execution_Results/deposit-1eth-contractBalance.png)
 
     * Transaction 2: Send 10 ether as wei.
-    ![alt=“”](Execution_Results/deposit-10eth-1.png)
 
+        Step1: Set the Value to 10 ETH
+    ![alt=“”](Execution_Results/deposit-10eth-1.png)
+        Step2: Execute Deposit Function
     ![alt=“”](Execution_Results/deposit-10eth-2.png)
 
-    * Transaction 3: Send 5 ether.
-    ![alt=“”](Execution_Results/deposit-5eth-1.png)
-    ![alt=“”](Execution_Results/deposit-5eth-2.png)
+        Step3: Contract Balance Check
+    ![alt=“”](Execution_Results/deposit-10eth-3.png)
 
+    * Transaction 3: Send 5 ether.
+        Step1: Set the Value to 5 ETH
+    ![alt=“”](Execution_Results/deposit-5eth-1.png)
+
+        Step2: Execute Deposit Function
+    ![alt=“”](Execution_Results/deposit-5eth-2.png)
+        Step3: Contract Balance Check
+    ![alt=“”](Execution_Results/deposit-5eth-3.png)
 
 3. Once you’ve successfully deposited funds into your contract, test the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, use the `contractBalance` function to verify that the funds were withdrawn from your contract. Also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
+    * Withdraw 5ETH into Account1
+    ![alt=“”](Execution_Results/withdraw-5eth-into-account1.png)
 
+    * Check the Contact Balance using contractBalance function to verify that the funds were withdrawn from the contract
+    ![alt=“”](Execution_Results/withdraw-5eth-contract-balance.png)
 
+    * Verify that the address is correct using lastToWithdraw
+    ![alt=“”](Execution_Results/withdraw-5eth-lastToWithdraw.png)
 
+    * Verify that the amount is correct using lastWithdrawAmount
+    ![alt=“”](Execution_Results/withdraw-5eth-lastWithdrawAmount.png)
+
+    * Withdraw 10ETH into Account2
+    ![alt=“”](Execution_Results/withdraw-10eth-into-account2.png)
+
+    * Check the Contact Balance using contractBalance function to verify that the funds were withdrawn from the contract
+    ![alt=“”](Execution_Results/withdraw-10eth-contract-balance.png)
+
+    * Verify that the address is correct using lastToWithdraw
+    ![alt=“”](Execution_Results/withdraw-10eth-lastToWithdraw.png
+)
+
+    * Verify that the amount is correct using lastWithdrawAmount
+    ![alt=“”](Execution_Results/withdraw-10eth-lastWithdrawAmount.png)
 
 
 ---
-7-Feb-2023
+12-Feb-2023
 
