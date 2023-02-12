@@ -25,7 +25,7 @@ Execution steps:
 
    >  Dummy account2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
 
-![alt=“”](Execution_Results/set-Account1-and-Account2.png)
+![alt=“”](Execution_Results/set-Account-1-and-Account-2.png)
 
 
 2. Test the deposit functionality of your smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
